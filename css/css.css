@@ -1,0 +1,231 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+ /* min font */
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+body{
+  background-image: url(../images/Pacebaggrund.png);
+  background-color: #cccccc;
+  background-size: 1700px;
+}
+
+
+/* Baggrundsfarve til navigationsbaren */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #009DE0;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Links i navigatoinsbaren */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Skift farve ved hover på alle undtaget logoet */
+.topnav a:not([href="index.html"]):hover {
+  background-color: #0A8754;
+  color: #262730;
+}
+
+
+/* Farve til det aktive link*/
+.topnav a.active {
+  background-color: #0A8754;
+  color: #262730;
+}
+
+.logo{
+  height: 100px; /* logoets størelse */
+  width: auto;
+  margin: 0 20px; 
+}
+
+h1{
+  text-align: center;
+  margin-right: 600px;
+  margin-top: 100px;
+}
+
+/* flex for forsiden */
+.flex-container{
+  display: flex;
+  justify-content: center; 
+  gap: 100px;
+  margin-top: 100px;
+}
+
+
+.item {
+  /*display: flex;*/
+  text-align: center;
+}
+
+.item img {
+  width: 275px; 
+  height: auto; 
+  margin-top: 10px; 
+  border-radius: 100%;
+}
+
+.item :hover{
+  width: 300px;
+  height: auto;
+  border-radius: 100%;
+}
+
+h3{
+  display: flex;
+  justify-content: left;
+}
+
+/* billed til motivations siden */
+.img_motivation{
+  width: 350px;
+  height: auto;
+float: right;
+margin-top: 5%;
+margin-left: 10%;
+}
+
+/* placering af alt content på motivations siden */
+.pos_motivation{
+  position: absolute;
+  width: 85%;
+  left: 5%;
+}
+
+/* billed til ruter siden (ruter) */
+.img_ruter{
+  margin-right: 10%;
+  display: block;
+  width: 150px;
+  height: auto;
+float: right;
+margin-left: 20%;
+}
+
+/* placering af alt content på ruter siden (ruter) */
+.pos_ruter{
+  position: absolute;
+  width: 85%;
+  left: 8%;
+}
+
+/* placering af alt content på ruter siden (strava) */
+.pos_strava{
+  position: absolute;
+  margin-top: 40%;
+  width: 85%;
+  left: 8%;
+}
+
+/* billeder til ruter siden (strava) */
+.img_strava{
+  width: 150px;
+  height: auto;
+float: right;
+margin-top: 5%;
+margin-right: 7%;
+margin-left: 22%;
+}
+
+/* tekst til ruter siden (strava) */
+.strava_tekst{
+position: absolute;
+margin-right: 15%;
+}
+
+/* placering af content til siden udstyr */
+.pos_udstyr{
+  position: absolute;
+  width: 85%;
+  left: 5%; 
+}
+
+
+.øverstetekst{
+  display: flex;
+  justify-content:center;
+  gap: 7%;
+  text-align: left;
+  padding: 5%;
+}
+
+.tresko{
+margin-left: 5%;
+}
+
+
+/* placering af billeder og teksten oven over på siden udstyr */
+.img_udstyr{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.nederstetekst{
+  margin-left: 5%;
+}
+
+/* min footer */
+footer {
+  justify-content: center;
+  gap: 20%;
+  text-align: center;
+  padding: 1px;
+  background-color: #009DE0;
+  color: white;
+  margin-top: 5%;
+}
+
+
+/* min footer virkede ikke på alle sider, derfor lavede jeg footer classes til de andre sider*/
+/* Footer motivation */
+.fmot{
+  justify-content: center;
+  gap: 20%;
+  text-align: center;
+  padding: 1px;
+  background-color: #009DE0;
+  color: white;
+  margin-top: 45%;
+}
+
+/* Footer ruter */
+.frut{
+  justify-content: center;
+  gap: 20%;
+  text-align: center;
+  padding: 1px;
+  background-color: #009DE0;
+  color: white;
+  margin-top: 83%;
+}
+
+/* Footer udstyr */
+.fuds{
+  justify-content: center;
+  gap: 20%;
+  text-align: center;
+  padding: 1px;
+  background-color: #009DE0;
+  color: white;
+  margin-top: 83%;
+}
+
+/* har brugt lighthouse og den er godt tilfreds */
+
