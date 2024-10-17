@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pace | Ruter</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.pace.png">
+  <link rel="stylesheet" href="css/css.css">
+  <!-- Link til font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <main>
+  <header>
+    <!-- Her er min navigationsbar-->
+    <nav class="topnav">
+      <a href="Motivation.html">Motivation</a>
+      <a href="#Ruter" class="active"><i class="fa-solid fa-person-running fa-beat" style="color: #000000;"></i>Ruter</a>
+
+     <!-- Logo i midten -->
+     <a href="index.html"> <!-- logoet er nu en knap til forsiden-->
+      <img src="images/logo.pace.png" alt="logo pace" class="logo">
+     </a>
+
+      <a href="Udstyr.html">Udstyr</a>
+      <a href="Løbestil.html">Løbestil</a>
+    </nav>
+  </header>
+  
+    <h1>Hvor skal du løbe hen næste gang?</h1>
+   
+    <div class="pos_ruter">
+      <div class="img_ruter">
+      <img  src="images/ruter1.png" alt="ruter1">
+      <img  src="images/ruter2.png" alt="ruter2">
+      <img  src="images/ruter3.png" alt="ruter3">
+    </div>
+    <h3>
+      Er du på udkig efter nye løberuter at udforske? At løbe den samme rute igen og igen kan blive ensformigt, og det kan være svært at finde motivationen til at komme ud. Heldigvis er der mange fantastiske steder, du kan løbe, som giver dig en chance for at opleve smukke seværdigheder undervejs.
+<br> Med en app til løberuter kan du nemt finde inspiration til nye ruter i dit nærområde. En mulighed er Strava, der ikke kun tilbyder GPS-sporing, men også har et væld af brugergenererede ruter og forslag.
+<br> Forestil dig at løbe langs en smuk kystlinje, gennem frodige skove eller i byens pulserende gader, mens du nyder seværdighederne omkring dig.  At variere dine løberuter kan gøre træningen mere spændende og motiverende. Med en app til løberuter som Strava kan du desuden planlægge dine ruter på forhånd og tilføje interessante stop undervejs, hvilket gør løbeturen til en endnu bedre oplevelse.
+
+<br> <br> Er du klar til at tage din løbetræning til næste niveau? Download Strava i dag, og begynd at udforske de mange muligheder, der venter på dig. Gå på opdagelse, find nye løberuter og lad dig inspirere af de fantastiske seværdigheder, du kan opleve på vejen. Kom ud, løb, og mærk den lækre følelse, når du er kommet hjem igen.
+    </h3>
+
+  </div>
+
+  <div class="pos_strava">
+    <div class="img_strava">
+      <img class="img_strava" src="images/strava.png" alt="strava1">
+      <img class="img_strava" src="images/strava2.png" alt="strava2">
+    </div>
+
+  <div class="Strava_tekst">
+    <h1>STRAVA</h1>
+    <h3>
+      På Strava kan du søge efter ruter baseret på afstand, terræn og sværhedsgrad, hvilket gør det lettere at finde den perfekte rute, der passer til dine behov. Desuden kan du se, hvad andre løbere har anbefalet, hvilket giver dig mulighed for at opdage skjulte perler og naturskønne stier, du måske ikke ville have opdaget ellers. 
+      <br> Som et lille plus, kan du selv uploade dine ture, samt følge dine venner, give kudos og skrive kommentarer på deres opslag. En platform ligesom instagram, bare til dig der elsker at løbe.
+    </h3>  
+    <br>
+
+    <!--Skriv din email og få en rabatkode til strava plus-->
+  <h4>Indtast din e-mail og få en rabatkode til strava plus</h4>
+  <form id="emailForm">
+    <label for="Mail">Email</label>
+    <input type="email" id="email" name="Email" value="Skriv din mail her" required>
+    <input type="submit" value="Indsend">
+  </form>
+  <p id="responseMessage" style="display:none;">Tak, du modtager en mail med rabatkoden</p>
+  <script>
+    document.getElementById('emailForm').addEventListener('submit', function(event) {
+      event.preventDefault(); /* Forhindrer at formen bliver sendt og siden opdateres */
+      document.getElementById('responseMessage').style.display = 'block'; // Viser beskeden
+    });
+  </script>
+
+  </div>
+  </div>
+
+  </main>
+  <footer class="frut">
+    <p>2024 PACE</p>
+    <p><a target="_blank" href="mailto:kontakt@pace.com">Kontakt@pace.dk</a></p>
+  </footer>
+</body>
+</html>
